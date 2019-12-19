@@ -2,7 +2,7 @@ import React from "react"
 
 export default () => {
   return (
-    <div className="inner">
+    <div id="two-section" className="inner">
       <h2>Projects</h2>
       <div className="features">
         <section

@@ -12,7 +12,7 @@ export default () => {
   }
 
   return (
-    <div className="inner">
+    <div id="three-section" className="inner">
       <h2>Get in touch</h2>
       <div className="split style1">
         <section>

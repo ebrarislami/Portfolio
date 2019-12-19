@@ -3,7 +3,7 @@ import React from "react"
 export default () => {
   return (
     <>
-      <section>
+      <section id="one-section">
         <div className="content">
           <div className="inner">
             <h2>Symanto - Software Engineer (Nov 2017 - Present)</h2>
@@ -22,7 +22,7 @@ export default () => {
           </div>
         </div>
       </section>
-      <section>
+      <section id="one-section">
         <div className="content">
           <div className="inner">
             <h2>Technoperia - Software Engineer (Nov 2016 - Nov 2017)</h2>

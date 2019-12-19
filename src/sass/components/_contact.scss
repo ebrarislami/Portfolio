@@ -6,16 +6,27 @@
 
 /* Contact */
 
-	ul.contact {
-		list-style: none;
-		padding: 0;
+#three-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s ease-in-out;
 
-		> li {
-			padding: 0;
-			margin: 1.5em 0 0 0;
+  &.visible {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-	}
+ul.contact {
+  list-style: none;
+  padding: 0;
+
+  > li {
+    padding: 0;
+    margin: 1.5em 0 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
