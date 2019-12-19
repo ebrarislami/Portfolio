@@ -2,7 +2,15 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import "./index.scss"
 import profilePic from "../images/ebooo.png"
+import peddy from "../images/peddy.svg"
+import marina from "../images/marina.svg"
+import rotta from "../images/rotta.png"
+import offblocks from "../images/offblocks.png"
 import noScript from "../sass/noscript.scss"
+
+import { FaLinkedinIn } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { FaFileContract } from "react-icons/fa"
 
 export default () => {
   const sendEmail = () => {
@@ -54,13 +62,46 @@ export default () => {
               Hi, I am Full-Stack Developer with 3+ years of experience from
               Skopje.
             </p>
-            <ul className="actions">
-              <li>
-                <a href="#one" className="button scrolly">
-                  Learn more
-                </a>
-              </li>
-            </ul>
+            <div class="actions-icons">
+              <ul className="actions">
+                <li>
+                  <a href="#one" className="button scrolly">
+                    Learn more
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <ul className="icons">
+                  <li>
+                    <a
+                      href="https://github.com/ebrarislami"
+                      target="_blank"
+                      className="icon brands fa-github"
+                    >
+                      <FaGithub />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/ebrar-islami-931b68b6/"
+                      target="_blank"
+                      className="icon brands fa-linkedin-in"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://drive.google.com/open?id=1yaLxdUZaH60wNoiP74WKTX7TNOBO-17u"
+                      target="_blank"
+                      className="icon brands fa-linkedin-in"
+                    >
+                      <FaFileContract />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -110,7 +151,6 @@ export default () => {
               <section
                 onClick={() => window.open("https://off-blocks.com", "_blank")}
               >
-                <img alt="" src="images/offblocks.png" />
                 <div className="content">
                   <h3>Off-Blocks</h3>
                   <p>
@@ -126,7 +166,6 @@ export default () => {
               <section
                 onClick={() => window.open("https://www.peddy.nl/", "_blank")}
               >
-                <img alt="" src="images/offblocks.png" />
                 <div className="content">
                   <h3>Peddy</h3>
                   <p>
@@ -142,7 +181,6 @@ export default () => {
                   window.open("https://www.intelory.com/products/", "_blank")
                 }
               >
-                <img alt="" src="images/offblocks.png" />
                 <div className="content">
                   <h3>Marina</h3>
                   <p>
@@ -158,7 +196,6 @@ export default () => {
                   window.open("http://www.rottaapp.com/", "_blank")
                 }
               >
-                <img alt="" src="images/offblocks.png" />
                 <div className="content">
                   <h3>Rotta</h3>
                   <p>
@@ -235,7 +272,7 @@ export default () => {
                           target="_blank"
                           className="icon brands fa-github"
                         >
-                          <span className="label">GitHub</span>
+                          <FaGithub />
                         </a>
                       </li>
                       <li>
@@ -244,7 +281,16 @@ export default () => {
                           target="_blank"
                           className="icon brands fa-linkedin-in"
                         >
-                          <span className="label">LinkedIn</span>
+                          <FaLinkedinIn />
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://drive.google.com/open?id=1yaLxdUZaH60wNoiP74WKTX7TNOBO-17u"
+                          target="_blank"
+                          className="icon brands fa-linkedin-in"
+                        >
+                          <FaFileContract />
                         </a>
                       </li>
                     </ul>
