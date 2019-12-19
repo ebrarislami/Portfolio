@@ -5,5 +5,21 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Ebrar Islami`,
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Exo 2`,
+            variants: [`300`, `400`, `500`, `700`],
+          },
+        ],
+      },
+    },
+  ],
 }
