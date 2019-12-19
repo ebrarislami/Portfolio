@@ -33,7 +33,7 @@ export default () => {
         </section>
         <section
           onClick={() =>
-            window.open("https://www.intelory.com/products/", "_blank")
+            window.open("http://www.intelory.com/products/", "_blank")
           }
         >
           <div className="content">
