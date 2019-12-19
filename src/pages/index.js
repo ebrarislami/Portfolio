@@ -10,10 +10,6 @@ import Html from "../components/Html"
 import Sidebar from "../components/Sidebar"
 
 class Index extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     this.controller = new ScrollMagic.Controller()
     new ScrollMagic.Scene({

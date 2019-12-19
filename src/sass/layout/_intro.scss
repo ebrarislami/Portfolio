@@ -33,6 +33,7 @@
 
   p {
     font-size: 1.25em;
+    width: 70%;
 
     @include breakpoint("<=medium") {
       br {

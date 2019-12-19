@@ -12,7 +12,8 @@ export default () => {
         <img className="pic" src={profilePic} alt="" />
         <h1>Ebrar Islami</h1>
         <p>
-          Hi, I am Full-Stack Developer with 3+ years of experience from Skopje.
+          Hi, I am Skopje based Full-Stack Developer with 3+ years of experience
+          focused on crafting web & mobile apps
         </p>
         <div class="actions-icons">
           <ul className="actions">
