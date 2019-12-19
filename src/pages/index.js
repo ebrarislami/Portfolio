@@ -12,10 +12,10 @@ import Sidebar from "../components/Sidebar"
 class Index extends Component {
   constructor(props) {
     super(props)
-    this.controller = new ScrollMagic.Controller()
   }
 
   componentDidMount() {
+    this.controller = new ScrollMagic.Controller()
     new ScrollMagic.Scene({
       triggerElement: "#welcome-inner",
       triggerHook: 0.9,

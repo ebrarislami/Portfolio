@@ -2,9 +2,8 @@ import React, { useEffect } from "react"
 import ScrollMagic from "scrollmagic"
 
 export default () => {
-  const controller = new ScrollMagic.Controller()
-
   useEffect(() => {
+    const controller = new ScrollMagic.Controller()
     new ScrollMagic.Scene({ triggerElement: "#intro", duration: "100%" })
       .setClassToggle("#welcome", "active") // add class toggle
       .addIndicators() // add indicators (requires plugin)
