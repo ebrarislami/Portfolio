@@ -36,7 +36,7 @@ export default () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/ebrar-islami-931b68b6/"
+                  href="https://www.linkedin.com/in/ebrarislami/"
                   target="_blank"
                   className="icon brands fa-linkedin-in"
                 >
