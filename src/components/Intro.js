@@ -45,7 +45,7 @@ export default () => {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1hIn3Sf5VpAGaJMpsn7naq6CzuZ0WFvCe/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1G0JLMzn8OBQNWsPlCWQu0iUYtlfIC9fR/view?usp=sharing"
                   target="_blank"
                   className="icon brands fa-linkedin-in"
                 >
