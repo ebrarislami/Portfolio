@@ -6,6 +6,23 @@ export default () => {
       <h2>Projects</h2>
       <div className="features">
         <section
+          onClick={() => window.open("https://www.dartwin.nl", "_blank")}
+        >
+          <div className="content">
+            <h3>DartWin</h3>
+            <p>
+              DartWin is a 21st century game of darts that is offering a new and
+              incredibly fun gaming experience for all ages, which can be played
+              in pubs, shopping malls, hotel lobbies, and many more public
+              venues. <br />
+              Technology stack:
+              <br />
+              - Node.js, React, Sockets, React Native
+              <br />
+            </p>
+          </div>
+        </section>
+        <section
           onClick={() => window.open("https://off-blocks.com", "_blank")}
         >
           <div className="content">

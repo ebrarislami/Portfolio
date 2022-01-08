@@ -6,7 +6,26 @@ export default () => {
       <section id="one-section">
         <div className="content">
           <div className="inner">
-            <h2>Symanto - Software Engineer (Nov 2017 - Present)</h2>
+            <h2>
+              Senior Software Engineer (Nov 2020 - Present) - SportBuff (Remote)
+            </h2>
+            <p>
+              Real-time fan engagement and gamification of audiences. I was in
+              charge of migrating their old app from plain JavaScript to React
+              (Typescript) app and helping them achieve functionalities that
+              were needed to secure a spot in the FIFA 2022 World Cup.
+              <br />
+              <br />
+              Technology Stack:
+              <br />- TypeScript, JavaScript, React.js, Tailwind, LitHTML
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="one-section">
+        <div className="content">
+          <div className="inner">
+            <h2>Software Engineer (Nov 2017 - Nov 2020) - Symanto (Remote)</h2>
             <p>
               Our unique application of psychology and technology enables the
               deepest level of understanding of not just WHAT your customers are
@@ -16,8 +35,9 @@ export default () => {
               <br />
               Technology Stack:
               <br />
-              - C#, .Net Framework, Elastic, MSSQL
-              <br />- Angular 8, D3.js, NgRx, Charts.js
+              - TypeScript, React.js, Angular, D3.js, Chart.js
+              <br />- C#, .Net Framework, Redis, ElasticSearch, PostgreSQL,
+              Azure
             </p>
           </div>
         </div>
@@ -25,7 +45,9 @@ export default () => {
       <section id="one-section">
         <div className="content">
           <div className="inner">
-            <h2>Technoperia - Software Engineer (Nov 2016 - Nov 2017)</h2>
+            <h2>
+              Software Engineer (Nov 2016 - Nov 2017) - Technoperia (Skopje)
+            </h2>
             <p>
               Cloud-based API's, hybrid or native mobile applications, web
               applications, deep-level social media integration
@@ -33,8 +55,8 @@ export default () => {
               <br />
               Technology stack:
               <br />
-              - Node.js, C#
-              <br />- Ionic, Angular 2+, React.js, React Native
+              - TypeScript, JavaScript, React.js, React Native, Angular
+              <br />- Node.js, C#
             </p>
           </div>
         </div>

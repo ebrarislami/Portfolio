@@ -67,6 +67,7 @@ export default () => {
                   <a
                     href="https://github.com/ebrarislami"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon brands fa-github"
                   >
                     <FaGithub />
@@ -74,8 +75,9 @@ export default () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/ebrar-islami-931b68b6/"
+                    href="https://www.linkedin.com/in/ebrarislami"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon brands fa-linkedin-in"
                   >
                     <FaLinkedinIn />
@@ -83,8 +85,9 @@ export default () => {
                 </li>
                 <li>
                   <a
-                    href="https://drive.google.com/open?id=1yaLxdUZaH60wNoiP74WKTX7TNOBO-17u"
+                    href="https://drive.google.com/file/d/1G0JLMzn8OBQNWsPlCWQu0iUYtlfIC9fR/view?usp=sharing"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="icon brands fa-linkedin-in"
                   >
                     <FaFileContract />

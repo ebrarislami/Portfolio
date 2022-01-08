@@ -1,5 +1,4 @@
 import React from "react"
-import ScrollMagic from "scrollmagic"
 import profilePic from "../images/ebooo.png"
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
@@ -12,7 +11,7 @@ export default () => {
         <img className="pic" src={profilePic} alt="" />
         <h1>Ebrar Islami</h1>
         <p>
-          Hi, I am Skopje based Full-Stack Developer with 4+ years of experience
+          Hi, I am Skopje based Full-Stack Developer with 5+ years of experience
           focused on crafting web & mobile apps
         </p>
         <div class="actions-icons">
@@ -29,6 +28,7 @@ export default () => {
                 <a
                   href="https://github.com/ebrarislami"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="icon brands fa-github"
                 >
                   <FaGithub />
@@ -38,6 +38,7 @@ export default () => {
                 <a
                   href="https://www.linkedin.com/in/ebrarislami/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="icon brands fa-linkedin-in"
                 >
                   <FaLinkedinIn />
@@ -47,6 +48,7 @@ export default () => {
                 <a
                   href="https://drive.google.com/file/d/1G0JLMzn8OBQNWsPlCWQu0iUYtlfIC9fR/view?usp=sharing"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="icon brands fa-linkedin-in"
                 >
                   <FaFileContract />
