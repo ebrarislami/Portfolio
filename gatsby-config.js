@@ -11,14 +11,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Exo 2`,
-            variants: [`300`, `400`, `500`, `700`],
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Exo 2`,
+              variants: [`300`, `400`, `500`, `700`],
+            },
+          ],
+        },
       },
     },
   ],
