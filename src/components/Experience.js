@@ -6,25 +6,6 @@ export default () => {
       <section id="one-section">
         <div className="content">
           <div className="inner">
-            <h2>
-              Senior Software Engineer (Nov 2020 - Present) - SportBuff (Remote)
-            </h2>
-            <p>
-              Real-time fan engagement and gamification of audiences. I was in
-              charge of migrating their old app from plain JavaScript to React
-              (Typescript) app and helping them achieve functionalities that
-              were needed to secure a spot in the FIFA 2022 World Cup.
-              <br />
-              <br />
-              Technology Stack:
-              <br />- TypeScript, JavaScript, React.js, Tailwind, LitHTML
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="one-section">
-        <div className="content">
-          <div className="inner">
             <h2>Software Engineer (Nov 2017 - Nov 2020) - Symanto (Remote)</h2>
             <p>
               Our unique application of psychology and technology enables the
