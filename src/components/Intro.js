@@ -44,16 +44,6 @@ export default () => {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://drive.google.com/file/d/1G0JLMzn8OBQNWsPlCWQu0iUYtlfIC9fR/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="icon brands fa-linkedin-in"
-                >
-                  <FaFileContract />
-                </a>
-              </li>
             </ul>
           </div>
         </div>
