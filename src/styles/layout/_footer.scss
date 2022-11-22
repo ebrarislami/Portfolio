@@ -1,0 +1,38 @@
+/* Footer */
+
+	#footer {
+		#sidebar + #wrapper + & {
+			margin-left: _size(sidebar-width);
+
+			@include breakpoint('<=large') {
+				margin-left: 0;
+			}
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		> .inner {
+			padding: 2em 4em 2em 4em;
+			text-align: center;
+			a {
+				border-bottom-color: _palette(border);
+
+				&:hover {
+					border-bottom-color: transparent;
+				}
+			}
+
+			.menu {
+				font-size: 0.8em;
+				color: _palette(border);
+			}
+		}
+
+		#header + #wrapper + & {
+			> .inner {
+				margin: 0 auto;
+			}
+		}
+	}

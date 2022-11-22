@@ -8,7 +8,7 @@ const Intro = () => {
   return (
     <div className="inner">
       <div id="welcome-inner">
-        <Image src={profilePic} alt="Profile Picture" />
+        <Image className="pic" src={profilePic} alt="Profile Picture" />
         <h1>Ebrar Islami</h1>
         <p>
           Hi, I am Skopje based Full-Stack Developer with 5+ years of experience
