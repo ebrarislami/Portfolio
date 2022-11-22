@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => {
+const Experience = () => {
   return (
     <>
       <section id="one-section">
@@ -45,3 +45,5 @@ export default () => {
     </>
   )
 }
+
+export default Experience

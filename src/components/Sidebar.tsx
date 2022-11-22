@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-export default () => {
+const Sidebar = () => {
   return (
     <div className="inner">
       <nav>
@@ -30,3 +30,5 @@ export default () => {
     </div>
   )
 }
+
+export default Sidebar

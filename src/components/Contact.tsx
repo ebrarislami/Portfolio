@@ -1,14 +1,13 @@
 import React from "react"
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
-import { FaFileContract } from "react-icons/fa"
 
-export default () => {
+const Contact = () => {
   const sendEmail = () => {
-    const name = document.getElementById("name").value
-    const email = document.getElementById("email").value
-    const message = document.getElementById("message").value
-    window.location.href = `mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`
+    // const name = document.getElementById("name").value
+    // const email = document.getElementById("email").value
+    // const message = document.getElementById("message").value
+    // window.location.href = `mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`
   }
 
   return (
@@ -28,7 +27,7 @@ export default () => {
               </div>
               <div className="field">
                 <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows="5"></textarea>
+                <textarea name="message" id="message" rows={5}></textarea>
               </div>
             </div>
             <ul className="actions">
@@ -91,3 +90,5 @@ export default () => {
     </div>
   )
 }
+
+export default Contact

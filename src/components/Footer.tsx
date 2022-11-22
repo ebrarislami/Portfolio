@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => {
+const Footer = () => {
   return (
     <footer id="footer" className="wrapper style1-alt">
       <div className="inner">
@@ -11,3 +11,5 @@ export default () => {
     </footer>
   )
 }
+
+export default Footer

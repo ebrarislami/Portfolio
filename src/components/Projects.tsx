@@ -1,6 +1,6 @@
 import React from "react"
 
-export default () => {
+const Projects = () => {
   return (
     <div id="two-section" className="inner">
       <h2>Projects</h2>
@@ -92,3 +92,5 @@ export default () => {
     </div>
   )
 }
+
+export default Projects
