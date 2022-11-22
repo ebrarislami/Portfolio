@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const { colors } = require('tailwindcss/defaultTheme')
+const { colors, fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   mode: 'jit',
@@ -24,7 +24,11 @@ module.exports = {
       gray: '#F3F4F5',
       lightGray: '#F3F7FA',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-primary)', ...fontFamily.sans],
+      },
+    },
     screens: {
       xs: '420px',
       sm: '640px',
@@ -41,5 +45,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
-  ]
+  ],
 }
