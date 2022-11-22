@@ -23,15 +23,15 @@ export default function Home() {
             <Intro />
           </section>
 
-          <section id="one" className="wrapper style2 spotlights">
+          <section id="experience" className="wrapper style2 spotlights">
             <Experience />
           </section>
 
-          <section id="two" className="wrapper style3 fade-up">
+          <section id="projects" className="wrapper style3 fade-up">
             <Projects />
           </section>
 
-          <section id="three" className="wrapper style1 fade-up">
+          <section id="contact" className="wrapper style1 fade-up">
             <Contact />
           </section>
         </div>

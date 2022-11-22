@@ -1,6 +1,6 @@
-import React from "react"
-import { FaLinkedinIn } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
+import React from 'react'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 
 const Contact = () => {
   const sendEmail = () => {
@@ -44,9 +44,7 @@ const Contact = () => {
             <li>
               <h3>Address</h3>
               <span>
-                Ul. Mirche Orovchanec,
-                <br />
-                Skopje, 1000
+                Skopje
                 <br />
                 Macedonia
               </span>

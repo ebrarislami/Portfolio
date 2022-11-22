@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const Sidebar = () => {
   return (
@@ -6,22 +6,22 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <a id="welcome" href="#intro">
+            <a id="sidebar-intro" href="#intro">
               Welcome
             </a>
           </li>
           <li>
-            <a id="experience" href="#one">
+            <a id="sidebar-experience" href="#experience">
               Experience
             </a>
           </li>
           <li>
-            <a id="projects" href="#two">
+            <a id="sidebar-projects" href="#projects">
               Projects
             </a>
           </li>
           <li>
-            <a id="contact" href="#three">
+            <a id="sidebar-contact" href="#contact">
               Contact
             </a>
           </li>
