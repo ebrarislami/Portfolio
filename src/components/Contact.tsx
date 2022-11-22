@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
   const sendEmail = () => {
-    // const name = document.getElementById("name").value
-    // const email = document.getElementById("email").value
-    // const message = document.getElementById("message").value
-    // window.location.href = `mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`
+    if (typeof window !== 'undefined') {
+      window.open(
+        `mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`,
+        '_blank',
+      )
+    }
   }
 
   return (
@@ -19,15 +25,33 @@ const Contact = () => {
             <div className="fields">
               <div className="field half">
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  name="name"
+                  id="name"
+                />
               </div>
               <div className="field half">
                 <label htmlFor="email">Email</label>
-                <input type="text" name="email" id="email" />
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  name="email"
+                  id="email"
+                />
               </div>
               <div className="field">
                 <label htmlFor="message">Message</label>
-                <textarea name="message" id="message" rows={5}></textarea>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  name="message"
+                  id="message"
+                  rows={5}
+                ></textarea>
               </div>
             </div>
             <ul className="actions">
