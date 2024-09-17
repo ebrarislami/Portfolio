@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
@@ -51,7 +53,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   rows={5}
-                ></textarea>
+                />
               </div>
             </div>
             <ul className="actions">

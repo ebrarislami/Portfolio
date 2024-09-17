@@ -1,4 +1,6 @@
-import React from "react"
+'use client'
+
+import React from 'react'
 
 const Projects = () => {
   return (
@@ -6,7 +8,7 @@ const Projects = () => {
       <h2>Projects</h2>
       <div className="features">
         <section
-          onClick={() => window.open("https://www.dartwin.nl", "_blank")}
+          onClick={() => window.open('https://www.dartwin.nl', '_blank')}
         >
           <div className="content">
             <h3>DartWin</h3>
@@ -23,7 +25,7 @@ const Projects = () => {
           </div>
         </section>
         <section
-          onClick={() => window.open("https://off-blocks.com", "_blank")}
+          onClick={() => window.open('https://off-blocks.com', '_blank')}
         >
           <div className="content">
             <h3>Off-Blocks</h3>
@@ -39,7 +41,7 @@ const Projects = () => {
             </p>
           </div>
         </section>
-        <section onClick={() => window.open("https://www.peddy.nl/", "_blank")}>
+        <section onClick={() => window.open('https://www.peddy.nl/', '_blank')}>
           <div className="content">
             <h3>Peddy</h3>
             <p>
@@ -55,7 +57,7 @@ const Projects = () => {
         </section>
         <section
           onClick={() =>
-            window.open("http://www.intelory.com/products/", "_blank")
+            window.open('http://www.intelory.com/products/', '_blank')
           }
         >
           <div className="content">
@@ -74,7 +76,7 @@ const Projects = () => {
           </div>
         </section>
         <section
-          onClick={() => window.open("http://www.rottaapp.com/", "_blank")}
+          onClick={() => window.open('http://www.rottaapp.com/', '_blank')}
         >
           <div className="content">
             <h3>Rotta</h3>

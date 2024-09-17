@@ -1,14 +1,14 @@
+'use client'
+
 import React from 'react'
-import Image from 'next/image'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
-import profilePic from '@public/ebooo.png'
 
 const Intro = () => {
   return (
     <div className="inner">
       <div id="welcome-inner">
-        <Image className="pic" src={profilePic} alt="Profile Picture" />
+        <img className="pic" src="/ebooo.png" alt="author" />
         <h1>Ebrar Islami</h1>
         <p>
           Hi, I am Skopje based Full-Stack Developer with 5+ years of experience
