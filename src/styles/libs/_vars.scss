@@ -20,17 +20,17 @@ $size: (
   sidebar-width: 18em,
   sidebar-height: 3.5em,
   // when <=large is active
-    inner-width: 75em,
+  inner-width: 75em,
 );
 
 // Font.
 $font: (
   family: (
-    "Exo 2",
+    'Exo 2',
     sans-serif,
   ),
   family-fixed: (
-    "Courier New",
+    'Courier New',
     monospace,
   ),
   weight: normal,

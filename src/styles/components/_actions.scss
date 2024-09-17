@@ -12,7 +12,7 @@
 }
 
 ul.actions {
-  @include vendor("display", "flex");
+  @include vendor('display', 'flex');
   cursor: default;
   list-style: none;
   margin-left: (_size(element-margin) * -0.5);
@@ -24,7 +24,7 @@ ul.actions {
   }
 
   &.special {
-    @include vendor("justify-content", "center");
+    @include vendor('justify-content', 'center');
     width: 100%;
     margin-left: 0;
 
@@ -36,7 +36,7 @@ ul.actions {
   }
 
   &.stacked {
-    @include vendor("flex-direction", "column");
+    @include vendor('flex-direction', 'column');
     margin-left: 0;
 
     li {
@@ -52,8 +52,8 @@ ul.actions {
     width: calc(100% + #{_size(element-margin) * 0.5});
 
     li {
-      @include vendor("flex-grow", "1");
-      @include vendor("flex-shrink", "1");
+      @include vendor('flex-grow', '1');
+      @include vendor('flex-shrink', '1');
       width: 100%;
 
       > * {
@@ -66,15 +66,15 @@ ul.actions {
     }
   }
 
-  @include breakpoint("<=xsmall") {
+  @include breakpoint('<=xsmall') {
     &:not(.fixed) {
-      @include vendor("flex-direction", "column");
+      @include vendor('flex-direction', 'column');
       margin-left: 0;
       width: 100% !important;
 
       li {
-        @include vendor("flex-grow", "1");
-        @include vendor("flex-shrink", "1");
+        @include vendor('flex-grow', '1');
+        @include vendor('flex-shrink', '1');
         padding: (_size(element-margin) * 0.5) 0 0 0;
         text-align: center;
         width: 100%;
@@ -87,9 +87,9 @@ ul.actions {
           padding-top: 0;
         }
 
-        input[type="submit"],
-        input[type="reset"],
-        input[type="button"],
+        input[type='submit'],
+        input[type='reset'],
+        input[type='button'],
         button,
         .button {
           width: 100%;
