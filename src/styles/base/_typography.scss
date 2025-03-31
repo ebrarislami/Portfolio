@@ -32,10 +32,7 @@ textarea {
 a {
   @include vendor(
     'transition',
-    (
-      'color #{_duration(transition)} ease',
-      'border-bottom-color #{_duration(transition)} ease'
-    )
+    ('color #{_duration(transition)} ease', 'border-bottom-color #{_duration(transition)} ease')
   );
   border-bottom: dotted 1px _palette(fg-light);
   color: inherit;
@@ -88,10 +85,7 @@ h1 {
     padding-bottom: 0.35em;
 
     &:after {
-      @include vendor(
-        'background-image',
-        'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})'
-      );
+      @include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
       @include vendor('transition', 'max-width #{_duration(transition)} ease');
       border-radius: 0.2em;
       bottom: 0;
@@ -166,8 +160,7 @@ blockquote {
   border-left: solid (_size(border-width) * 4) _palette(border);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
-  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
-    _size(element-margin);
+  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
 }
 
 code {

@@ -36,13 +36,7 @@ button,
   &:after {
     @include vendor('transform', 'scale(0.25)');
     @include vendor('pointer-events', 'none');
-    @include vendor(
-      'transition',
-      (
-        'opacity #{_duration(transition)} ease',
-        'transform #{_duration(transition)} ease'
-      )
-    );
+    @include vendor('transition', ('opacity #{_duration(transition)} ease', 'transform #{_duration(transition)} ease'));
     background: _palette(fg-bold);
     border-radius: 3em;
     content: '';

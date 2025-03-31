@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React from 'react'
-import { FaLinkedinIn } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+import React from 'react';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Intro = () => {
   return (
@@ -11,8 +11,7 @@ const Intro = () => {
         <img className="pic" src="/ebooo.png" alt="author" />
         <h1>Ebrar Islami</h1>
         <p>
-          Hi, I am Skopje based Full-Stack Developer with 5+ years of experience
-          focused on crafting web & mobile apps
+          Hi, I am Skopje based Full-Stack Developer with 5+ years of experience focused on crafting web & mobile apps
         </p>
         <div className="actions-icons">
           <ul className="actions">
@@ -49,7 +48,7 @@ const Intro = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Intro
+export default Intro;

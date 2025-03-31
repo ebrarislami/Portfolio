@@ -88,10 +88,7 @@
       @include vendor('transform', 'translateY(0)');
       @include vendor(
         'transition',
-        (
-          'opacity #{_duration(activation)} ease',
-          'transform #{_duration(activation)} ease'
-        )
+        ('opacity #{_duration(activation)} ease', 'transform #{_duration(activation)} ease')
       );
       opacity: 1;
     }
@@ -110,10 +107,7 @@
       @include vendor('transform', 'translateY(0)');
       @include vendor(
         'transition',
-        (
-          'opacity #{_duration(activation)} ease',
-          'transform #{_duration(activation)} ease'
-        )
+        ('opacity #{_duration(activation)} ease', 'transform #{_duration(activation)} ease')
       );
       opacity: 1;
     }

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const { colors, fontFamily } = require('tailwindcss/defaultTheme')
+const { colors, fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -40,4 +40,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require('@tailwindcss/typography')],
-}
+};

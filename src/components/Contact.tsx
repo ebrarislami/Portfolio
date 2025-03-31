@@ -1,22 +1,19 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react'
-import { FaLinkedinIn } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const sendEmail = () => {
     if (typeof window !== 'undefined') {
-      window.open(
-        `mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`,
-        '_blank',
-      )
+      window.open(`mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`, '_blank');
     }
-  }
+  };
 
   return (
     <div id="three-section" className="inner">
@@ -27,23 +24,11 @@ const Contact = () => {
             <div className="fields">
               <div className="field half">
                 <label htmlFor="name">Name</label>
-                <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  type="text"
-                  name="name"
-                  id="name"
-                />
+                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" id="name" />
               </div>
               <div className="field half">
                 <label htmlFor="email">Email</label>
-                <input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  type="text"
-                  name="email"
-                  id="email"
-                />
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="email" id="email" />
               </div>
               <div className="field">
                 <label htmlFor="message">Message</label>
@@ -112,7 +97,7 @@ const Contact = () => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
