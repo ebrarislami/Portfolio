@@ -11,7 +11,8 @@
     "lint": "next lint",
     "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@heroicons/react": "2.2.0",
