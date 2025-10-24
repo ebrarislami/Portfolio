@@ -1,5 +1,5 @@
-@import 'reset';
-@import 'tailwind';
+@import 'tailwindcss';
+/* @import 'tw-animate-css'; */
 
 @plugin '@tailwindcss/typography';
 
@@ -16,8 +16,6 @@
     var(--font-primary), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
 }
-
-@import 'main';
 
 @layer utilities {
   .c-break-words {

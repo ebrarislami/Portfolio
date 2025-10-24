@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from 'next';
 import { Exo_2 } from 'next/font/google';
 
-import '@/styles/globals.scss';
+import '@/styles/globals.css';
+import '@/styles/app.scss';
 
 export const metadata: Metadata = {
   title: 'Portfolio | Ebrar Islami',
