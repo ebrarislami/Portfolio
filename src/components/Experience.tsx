@@ -7,6 +7,23 @@ const Experience = () => {
       <section id="one-section">
         <div className="content">
           <div className="inner">
+            <h2>Software Engineer (Nov 2020 - Dec 2022) - AvantStay (Remote)</h2>
+            <p>
+              At AvantStay, I served as a Frontend and Mobile Developer focusing on React Native. My role involved
+              building robust, cross-platform mobile applications that deliver seamless user experiences across iOS and
+              Android. By collaborating closely with designers, product managers, and backend engineers, I ensured every
+              feature was implemented with efficiency, scalability, and a user-first mindset.
+              <br />
+              <br />
+              Technology Stack:
+              <br />- TypeScript, React Native, React.js
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="one-section">
+        <div className="content">
+          <div className="inner">
             <h2>Software Engineer (Nov 2017 - Nov 2020) - Symanto (Remote)</h2>
             <p>
               Our unique application of psychology and technology enables the deepest level of understanding of not just
