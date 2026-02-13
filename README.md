@@ -1,1 +1,1 @@
-Ebrar Islami Personal Website
+Ebrar Islami - Personal Website
