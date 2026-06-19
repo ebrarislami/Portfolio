@@ -6,3 +6,6 @@ allowBuilds:
   '@parcel/watcher': true
   '@tailwindcss/oxide': true
   sharp: true
+
+minimumReleaseAgeExclude:
+  - '@types/node@26.0.0'
