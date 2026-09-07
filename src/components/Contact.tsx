@@ -1,102 +1,74 @@
 'use client';
 
-import React, { useState } from 'react';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import { useState, type FormEvent } from 'react';
+
+const field = 'border-0 border-b border-line bg-transparent py-2.5 text-base text-ink outline-none focus:border-accent';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [sent, setSent] = useState(false);
 
-  const sendEmail = () => {
-    if (typeof window !== 'undefined') {
-      window.open(`mailto:ebrarislami@gmail.com?subject=Contact - ${email} ${name}&body=${message}`, '_blank');
-    }
-  };
+  function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    // TODO: post FormData to your API route
+    setSent(true);
+  }
 
   return (
-    <div id="three-section" className="inner">
-      <h2>Get in touch</h2>
-      <div className="split style1">
-        <section>
-          <form>
-            <div className="fields">
-              <div className="field half">
-                <label htmlFor="name">Name</label>
-                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" id="name" />
-              </div>
-              <div className="field half">
-                <label htmlFor="email">Email</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="email" id="email" />
-              </div>
-              <div className="field">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  name="message"
-                  id="message"
-                  rows={5}
-                />
-              </div>
-            </div>
-            <ul className="actions">
-              <li>
-                <a onClick={sendEmail} type="button" className="button submit">
-                  Send Message
-                </a>
-              </li>
-            </ul>
-          </form>
-        </section>
-        <section>
-          <ul className="contact">
-            <li>
-              <h3>Address</h3>
-              <span>
-                Skopje
-                <br />
-                Macedonia
-              </span>
-            </li>
-            <li>
-              <h3>Email</h3>
-              <a href="#">ebrarislami@gmail.com</a>
-            </li>
-            <li>
-              <h3>Phone</h3>
-              <span>+389 71 363653</span>
-            </li>
-            <li>
-              <h3>Social</h3>
-              <ul className="icons">
-                <li>
-                  <a
-                    href="https://github.com/ebrarislami"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon brands fa-github"
-                  >
-                    <FaGithub />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/ebrarislami"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="icon brands fa-linkedin-in"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+    <section
+      id="contact"
+      className="grid grid-cols-1 gap-14 border-t border-rule py-[clamp(56px,8vw,96px)] md:grid-cols-2 md:gap-x-20"
+    >
+      <div className="flex flex-col gap-10">
+        <h2 className="font-serif text-[clamp(34px,4vw,52px)] tracking-[-.01em]">
+          Get in <em>touch</em>
+        </h2>
+        <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-8 gap-y-[18px] text-[15px] leading-normal">
+          <dt className="text-muted">Address</dt>
+          <dd>
+            Skopje
+            <br />
+            Macedonia
+          </dd>
+          <dt className="text-muted">Email</dt>
+          <dd>
+            <a href="mailto:ebrarislami@gmail.com" className="border-b border-line hover:text-accent">
+              ebrarislami@gmail.com
+            </a>
+          </dd>
+          <dt className="text-muted">Phone</dt>
+          <dd>+389 71 363653</dd>
+          <dt className="text-muted">Social</dt>
+          <dd className="flex flex-col items-start gap-1.5">
+            <a href="https://github.com/ebrarislami" className="border-b border-line hover:text-accent">
+              github.com/ebrarislami
+            </a>
+            <a href="https://www.linkedin.com/in/ebrarislami" className="border-b border-line hover:text-accent">
+              linkedin.com/in/ebrarislami
+            </a>
+          </dd>
+        </dl>
       </div>
-    </div>
+      <form onSubmit={onSubmit} className="flex flex-col gap-7 pt-3">
+        <label className="flex flex-col gap-2 text-[13px] text-muted">
+          Name
+          <input name="name" type="text" className={field} />
+        </label>
+        <label className="flex flex-col gap-2 text-[13px] text-muted">
+          Email
+          <input name="email" type="email" className={field} />
+        </label>
+        <label className="flex flex-col gap-2 text-[13px] text-muted">
+          Message
+          <textarea name="message" rows={4} className={`${field} resize-y`} />
+        </label>
+        <button
+          type="submit"
+          className="self-start rounded-full bg-ink px-[26px] py-3.5 text-sm font-medium text-paper transition-colors hover:bg-accent"
+        >
+          {sent ? 'Message sent' : 'Send Message'}
+        </button>
+      </form>
+    </section>
   );
 };
 

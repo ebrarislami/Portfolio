@@ -12,9 +12,28 @@
 @theme inline {
   --color-background: var(--background);
 
+  --color-paper: #f3eee4;
+  --color-ink: #1a1815;
+  --color-body: #3d372f;
+  --color-muted: #7b746a;
+  --color-faint: #9a938a;
+  --color-rule: #e2dacb;
+  --color-line: #d3cab9;
+  --color-accent: #a3341f;
+
+  --font-serif: var(--font-serif-family), Georgia, serif;
   --font-sans:
-    var(--font-primary), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
+    var(--font-sans-family), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 @layer utilities {

@@ -1,15 +1,7 @@
-'use client';
-
-import React from 'react';
-
 const Footer = () => {
   return (
-    <footer id="footer" className="wrapper style1-alt">
-      <div className="inner">
-        <ul className="menu">
-          <li>&copy; Ebrar Islami. All rights reserved.</li>
-        </ul>
-      </div>
+    <footer className="border-t border-rule px-[clamp(20px,6vw,80px)] py-7 text-center text-[13px] text-muted">
+      © Ebrar Islami. All rights reserved.
     </footer>
   );
 };
